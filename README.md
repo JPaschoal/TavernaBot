@@ -15,12 +15,19 @@ This is the most complete bot base you've ever seen! Created by [@rinckodev](htt
 ## Structures
 
 See how to use:
-- [Commands](#how-to-use-commands)
-- [Store](#store)
-- [Components](#how-to-use-components)
-- [Custom Id Params](#custom-id-params)
-- [Modals](#how-to-use-modals)
-- [Events](#how-to-use-events)
+- [Awesome Bot Base](#awesome-bot-base)
+  - [Scripts](#scripts)
+  - [Structures](#structures)
+  - [Features](#features)
+  - [How to use Commands](#how-to-use-commands)
+  - [Store](#store)
+  - [How to use Components](#how-to-use-components)
+  - [Custom Id Params](#custom-id-params)
+  - [How to use Modals](#how-to-use-modals)
+  - [How to use Events](#how-to-use-events)
+  - [ES6 Modules](#es6-modules)
+  - [Constants](#constants)
+  - [Env file](#env-file)
 
 ## Features
 - [ES6 Modules](#es6-modules)
