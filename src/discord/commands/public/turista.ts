@@ -1,5 +1,5 @@
 import { Command } from "#base";
-import { brBuilder, createEmbed, spaceBuilder } from "@magicyan/discord";
+import { brBuilder, createEmbed } from "@magicyan/discord";
 import { ApplicationCommandType } from "discord.js";
 import settingsJson from "../../../../settings.json" with { type: "json" };
 
