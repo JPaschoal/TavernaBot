@@ -1,7 +1,4 @@
-# Awesome Bot Base
-* [This project was generated using Constatic CLI](https://github.com/rinckodev/constatic)
-
-
+# Tavera Discord Bot
 > ⚠️ Node version required: 21.5 or higher 
 
 ## Scripts
@@ -14,7 +11,7 @@
 ## Structures
 
 See how to use:
-- [Awesome Bot Base](#awesome-bot-base)
+- [Tavera Discord Bot](#tavera-discord-bot)
   - [Scripts](#scripts)
   - [Structures](#structures)
   - [Features](#features)
@@ -55,59 +52,6 @@ new Command({
     async run(interaction){ // ChatInputCommandInteraction
 
         interaction.reply({ content: "pong" });
-    }
-});
-```
-
-Equivalent code with pure discord.js
-```ts
-client.on("ready", async (readyClient) => {
-    readyClient.application.commands.set([
-        {
-            name: "ping",
-            description: "Ping command",
-            dmPermission: false,
-            type: ApplicationCommandType.ChatInput,
-        }
-    ]);
-});
-
-client.on("interactionCreate", async (interaction) => {
-    if (interaction.isChatInputCommand()){
-        switch(interaction.commandName){
-            case "ping":{
-                interaction.reply({ content: "pong" });
-                return;
-            }
-        }
-    }
-});
-```
-
-```ts
-new Command({
-    name: "Profile",
-    dmPermission: false,
-    type: ApplicationCommandType.User, // <= User context menu command type
-    async run(interaction){ // UserContextMenuCommandInteraction
-        const { targetUser } = interaction;
-
-        interaction.reply({ content: `${targetUser.displayName}'s profile ` });
-    }
-});
-```
-
-```ts
-new Command({
-    name: "Say hello",
-    dmPermission: false,
-    type: ApplicationCommandType.Message, // <= Message context menu command type
-    async run(interaction){ // MessageContextMenuCommandInteraction
-        const { targetMessage } = interaction;
-
-        await interaction.deferReply({ ephemeral });
-    
-        targetMessage.reply({ content: `Hello ${targetMessage.author}!` });
     }
 });
 ```
@@ -505,12 +449,12 @@ You can have two env files in your project and choose which one to use using pre
 ```
 If you have a `.env.development` file you can run the **dev:dev** script
 ```bash
-npm run dev:dev
+yarn run dev:dev
 ```
 This is the same for all other scripts
 ```bash
-npm run start:dev
-npm run watch:dev
+yarn run start:dev
+yarn run watch:dev
 ```
 
 [Back to the top ↑](#features)
