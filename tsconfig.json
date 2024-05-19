@@ -20,7 +20,7 @@
 		"paths": {
 			"#base": ["./discord/base/index.ts"],
 			"#settings": ["./settings/index.ts"],
-			"#database": ["./database/index.ts"],
+			// "#database": ["./database/index.ts"],
 			"#functions": ["./functions/index.ts"],
 			"#tools": ["./tools/index.ts"],
 			"#classes": ["./classes/index.ts"],
