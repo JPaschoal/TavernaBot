@@ -8,6 +8,7 @@ new Event({
 
       if(newState.channelId === null) return;
       if(newState.channelId === oldState.channelId) return;
+      if(oldState.channelId !== null) return;
 
       const user = newState.member?.displayName;
       const channelName = newState.channel?.name;
