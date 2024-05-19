@@ -12,6 +12,8 @@ new Event({
       const user = newState.member?.displayName;
       const channelName = newState.channel?.name;
 
+      if(newState.member?.user.bot) return;
+
       const embed = new EmbedBuilder()
         .setTitle("Marcando presença!")
         .setDescription(`O mula ${user} se conectou no canal ${channelName}`)
