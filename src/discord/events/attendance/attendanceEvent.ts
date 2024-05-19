@@ -18,7 +18,7 @@ new Event({
         .setColor("#FF0000")
         .setTimestamp();
       
-        const channel = oldState.guild?.channels.cache.get("1241552848848945222") as TextChannel | undefined;
+        const channel = oldState.guild?.channels.cache.get("1241637598271901778") as TextChannel | undefined;
         channel?.send({ embeds: [embed] });
     }
   }

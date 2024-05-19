@@ -15,8 +15,6 @@ new Command({
 
       const membersList = members.flat().map(member => "• " + member);
 
-      console.log(membersList);
-
       const embed = createEmbed({
         title: "Turistas atuais do servidor:",
         description: brBuilder(
