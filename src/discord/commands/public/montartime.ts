@@ -11,7 +11,9 @@ new Command({
   async run(interaction) {
     // get members connected to the voice channel
     const voiceChannel = interaction.member?.voice.channel;
-    const members = voiceChannel?.members.map(member => member.user.username);
+    const members = voiceChannel?.members
+      .filter(member => !member.user.bot) // Filter out bot members
+      .map(member => member.user.username);
 
     // shuffle members
     const shuffledMembers = members?.sort(() => Math.random() - 0.5);
