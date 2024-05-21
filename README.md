@@ -1,4 +1,4 @@
-# Tavera Discord Bot
+# Taverna Discord Bot
 > ⚠️ Node version required: 21.5 or higher 
 
 ## Scripts
@@ -11,7 +11,7 @@
 ## Structures
 
 See how to use:
-- [Tavera Discord Bot](#tavera-discord-bot)
+- [Taverna Discord Bot](#taverna-discord-bot)
   - [Scripts](#scripts)
   - [Structures](#structures)
   - [Features](#features)
