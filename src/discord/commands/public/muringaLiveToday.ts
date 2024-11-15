@@ -13,7 +13,7 @@ new Command({
 
     const token = await getOAuthToken();
 
-    const streams = await getStream(token);
+    const streams = await getStream(token, "forgetfulxx");
 
     //check if stream is live
     if (streams.data.length > 0) {
