@@ -6,7 +6,7 @@ import { getOAuthToken, getStream } from "#functions";
 
 new Command({
   name: "streameruptime",
-  description: "Verifica a quanto tempo o Muringa está online.",
+  description: "Verifica a quanto tempo o streamer está online.",
   dmPermission: false,
   options: [
     {
