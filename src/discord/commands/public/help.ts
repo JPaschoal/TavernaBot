@@ -13,7 +13,9 @@ new Command({
       title: "Comandos disponíveis:",
       description: brBuilder(
         "• `/montartime` - Monta um time aleatório com os membros do servidor.",
-        "• `/turista` - Lista os membros que não estão conectados ao canal de voz."
+        "• `/turista` - Lista os membros que não estão conectados ao canal de voz.",
+        "• `/murilotrabalhouhoje` - Verifica se o Muringa trabalhou hoje.",
+        "• `/murilouptime` - Verifica a quanto tempo o Muringa está online."
       ),
       color: settingsJson.colors.info
     });

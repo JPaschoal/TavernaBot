@@ -21,14 +21,14 @@ export function createClient(options: CreateClientOptions = {}){
 		this.once("ready", async (client) => {
 			process.on("uncaughtException", async (err) => onError(err, client));
 			process.on("unhandledRejection", async (err) => onError(err, client));
-			console.log();
+			
 			const versions = [
 				`${ck.hex("#5865F2").underline("discord.js")} 📦 ${ck.yellow(version)}`,
 				`${ck.hex("#68a063").underline("NodeJs")} ${ck.yellow(process.versions.node)}`,
 			];
 			log.success(`${ck.green("Bot online")} ${versions.join(" - ")}`);
 			log.log(ck.greenBright(`➝ Connected as ${ck.hex("#57F287").underline(client.user.username)}`));
-			console.log();
+			
 
 			if (commands?.guilds){
 				const guilds = client.guilds.cache.filter(
