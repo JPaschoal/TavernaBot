@@ -15,8 +15,6 @@ new Command({
 
     const streams = await getStream(token);
 
-    console.log(streams);
-
     // get Stream Up Time
     const stream = streams.data[0];
     const startedAt = new Date(stream.started_at);
