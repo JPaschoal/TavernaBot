@@ -9,8 +9,8 @@ export const getOAuthToken = async () => {
   return json.access_token;
 };
 
-export const getStream = async (token: string) => {
-  const url = `${BASE_URL}/streams?user_login=forgetfulxx`;
+export const getStream = async (token: string, streamer: string) => {
+  const url = `${BASE_URL}/streams?user_login=${streamer}`;
   const response = await fetch(url, {
     headers: {
       "Client-ID": process.env.TWITCH_CLIENT_ID || "",
